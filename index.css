@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: sans-serif
+}
+input{
+    width: 100%;
+    height: 30px;
+}
+#wrapper{
+    width:100%;
+    height: 100%;
+}
+#wrapper .mid{
+    margin: auto;
+    display: table;
+    height: 100%;
+}
+#wrapper .mid .cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grid-controller{
+    display: table-cell;
+    position: absolute;
+    margin: auto;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999999999999999;
+    width: 300px;
+}
+
+#wrapper .mid .cell .grid-controller .box{
+        width: 100%;
+    overflow: auto;
+    position: relative;
+    max-height: 400px;
+    max-width: 900px;
+    height: 100%;
+}
+#wrapper .mid .cell .grid-controller{
+    border:1px solid #CCC;
+    max-height: 500px;
+    max-width: 900px;
+    border-radius: 5px;
+    width:100%;
+    position: relative;
+}
+#wrapper .mid .cell .grid-controller .box-head{
+    padding-top: 15px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    position: relative;
+    background-color: #efefef;
+    max-width: 900px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: inset 0px -3px 10px -5px black;
+}
+#wrapper .mid .cell .grid-controller .box-head .box-head-left{
+    float: left;
+    margin-left: 10px;
+    color: darkslategrey;
+}
+#wrapper .mid .cell .grid-controller .box-head .box-head-right{
+ float: right;
+    margin-right: 10px;
+}
+.fTable{
+    display: table;
+    width:100%;
+    border-spacing:3px;
+}
+.grid-controller .popup{
+    display: table-cell;
+    position: absolute;
+    margin: auto;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999999999999999;
+    width: 500px;
+    display: none;
+}
+.grid-controller .popup .fTable{
+    background: grey;
+    padding: 5px;
+}
+.ftable .fRow{
+    display: table-row;
+}
+.ftable .fRow.head .fCell{
+    background-color:#ccc;
+    cursor: pointer;
+}
+.ftable .fRow.head .fCell span{
+    font-weight: 600 !important;
+}
+.ftable .fRow .fCell{
+    display: table-cell;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color:#efefef;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.ftable .fRow .fCell .text{
+    padding:10px;
+}
+.btn:first-child{
+    margin-right: 5px;
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    padding: 7px !important;
+    cursor: pointer;
+}
+.btn.edit{
+    background-color:dodgerblue;
+}
+.btn.delete{
+    background-color:orangered;
+}
+
+.btn.refresh{
+    background-color: mediumpurple;
+}
+.btn.new{
+    background-color: limegreen
+}
+
+.btn.addNew{
+    background-color: limegreen;
+}
+.btn.close-popup{
+    background-color: orangered;
+}
