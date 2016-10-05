@@ -2,9 +2,10 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-weight: 300;
-    font-size: 14px;
-    font-family: sans-serif
+  font-weight: 300;
+  font-size: 14px;
+	color: #34495e;
+  font-family: "Open Sans", sans-serif;
 }
 input{
     width: 100%;
@@ -54,22 +55,25 @@ input{
     position: relative;
 }
 #wrapper .mid .cell .grid-controller .box-head{
-    padding-top: 15px;
-    padding-bottom: 35px;
-    padding-left: 5px;
-    position: relative;
-    background-color: #efefef;
-    max-width: 900px;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9999;
-    box-shadow: inset 0px -3px 10px -5px black;
+	padding-top: 15px;
+	padding-bottom: 35px;
+	padding-left: 5px;
+	position: relative;
+	background-color: #fff;
+	max-width: 900px;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;
+	box-shadow: inset 0px -3px 10px -5px grey;
+	border-radius: 5px 5px 0px 0px;
 }
 #wrapper .mid .cell .grid-controller .box-head .box-head-left{
     float: left;
     margin-left: 10px;
     color: darkslategrey;
+		font-size: 20px;
+		opacity: 0.8;
 }
 #wrapper .mid .cell .grid-controller .box-head .box-head-right{
  float: right;
@@ -78,7 +82,6 @@ input{
 .fTable{
     display: table;
     width:100%;
-    border-spacing:3px;
 }
 .grid-controller .popup{
     display: table-cell;
@@ -101,20 +104,22 @@ input{
     display: table-row;
 }
 .ftable .fRow.head .fCell{
-    background-color:#ccc;
-    cursor: pointer;
+	background-color: #f4f4f4;
+	cursor: pointer;
+	border: none;
 }
 .ftable .fRow.head .fCell span{
     font-weight: 600 !important;
 }
 .ftable .fRow .fCell{
-    display: table-cell;
-    line-height: 40px;
-    vertical-align: middle;
-    background-color:#efefef;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+	display: table-cell;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 .ftable .fRow .fCell .text{
     padding:10px;
@@ -124,27 +129,12 @@ input{
 }
 .btn{
     border-radius: 10px;
-    color: white;
+    color: grey;
     padding: 7px !important;
     cursor: pointer;
-}
-.btn.edit{
-    background-color:dodgerblue;
-}
-.btn.delete{
-    background-color:orangered;
+		text-decoration: underline;
 }
 
-.btn.refresh{
-    background-color: mediumpurple;
-}
-.btn.new{
-    background-color: limegreen
-}
-
-.btn.addNew{
-    background-color: limegreen;
-}
-.btn.close-popup{
-    background-color: orangered;
+.head-name{
+	    font-size: 20px;
 }

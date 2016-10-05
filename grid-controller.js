@@ -81,8 +81,8 @@ GridController = function ($area, data, name) {
                 '<div class="fCell">',
                 '</div>',
                 '<div class="fCell">',
-                '<span class="btn addnew">Ekle</span>',
-                '<span class="btn close-popup">Kapat</span>',
+                '<span class="btn addnew">Save</span>',
+                '<span class="btn close-popup">Close</span>',
                 '</div>',
                 '</div>'].join(" ");
             elements.push(html);
@@ -139,8 +139,8 @@ GridController = function ($area, data, name) {
             '<span class="head-name">', name || 'Grid', '</span>',
             '</span>',
             '<span class="box-head-right">',
-            '<span class="btn refresh">Yenile</span>',
-            '<span class="btn new">Yeni Kayıt</span>',
+            '<span class="btn refresh">Refresh</span>',
+            '<span class="btn new">New +</span>',
             '</span>',
             '</div>',
             '<div class="box">',
@@ -199,8 +199,8 @@ GridController = function ($area, data, name) {
                         let html = [
                             '<div class="fCell">',
                             '<span data-grid-id="', i, '" class="text">',
-                            '<span class="btn edit">Düzenle</span>',
-                            '<span class="btn delete">Sil</span>',
+                            '<span class="btn edit">Edit</span>',
+                            '<span class="btn delete">Delete</span>',
                             '</span>',
                             '</div>'
                         ].join(" ")
