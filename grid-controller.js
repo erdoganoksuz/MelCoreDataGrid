@@ -1,11 +1,12 @@
 GridController = function ($area, data, name) {
+
     var instance = this;
     var $wrapper = null;
     var $scope = null;
     var gridData = data;
     var $popup = null;
     var sortTriggerStatus=false;
-    
+
     //Set events handler
     var setEvents = function () {
         $scope.find(".btn.edit").off("click").on("click", function () { instance.Edit($(this)) });
