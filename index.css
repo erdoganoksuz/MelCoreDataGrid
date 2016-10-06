@@ -121,9 +121,6 @@ input{
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
 }
-.ftable .fRow .fCell .text{
-    padding:10px;
-}
 .btn:first-child{
     margin-right: 5px;
 }
