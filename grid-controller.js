@@ -16,8 +16,17 @@ GridController = function ($area, data, name,config) {
         $scope.find(".grid-heads").off("click").on("click", function () { instance.Sort($(this)) });
     }
 
+    var ShowLoading=function(){
+        $(".grid-controller").find(".loading-area").show();
+    }
+
+    var HideLoading=function(){
+        $(".grid-controller").find(".loading-area").hide();
+    }
+
     //Sort Grid Row
     this.Sort = function ($this) {
+        ShowLoading();
         var key = $this.text().trim();
         if (sortTriggerStatus) {
             gridData.sort(function (b, a) {
@@ -126,6 +135,15 @@ GridController = function ($area, data, name,config) {
     this.Create = function () {
         let html = [
           '<div class="grid-controller">',
+              '<div class="loading-area">',
+                    '<div class="loading-mid">',
+                        '<div class="loading-cell">',
+                            '<div>',
+                                '<div class="loader"></div>',
+                            '</div>',
+                        '</div>',
+                    '</div>',
+              '</div>',
               '<div class="popup">',
                   '<div class="popup-table">',
                       '<div class="popup-cell">',
@@ -216,6 +234,7 @@ GridController = function ($area, data, name,config) {
                         $($wrapper.find(".fRow")[i + 1]).append(elements);
                         elements = [];
                     }
+                    HideLoading();
                     setEvents();
                 }
             }
