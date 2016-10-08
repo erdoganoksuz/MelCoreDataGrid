@@ -39,7 +39,7 @@ input{
 #wrapper .mid .cell .grid-controller{
     border:1px solid #CCC;
     max-height: 500px;
-    max-width: 900px;
+    width:100% !important;
     border-radius: 5px;
     position: relative;
 }
@@ -128,10 +128,18 @@ input{
 .ftable .fRow.head .fCell{
 	background-color: #f4f4f4;
 	cursor: pointer;
-	border: none;
+  position: relative;
 }
 .ftable .fRow.head .fCell span{
     font-weight: 600 !important;
+}
+.chevron{
+    display:inline-block;
+    font-size: 17px;
+    position: absolute;
+    color: grey;
+    right: 0;
+    margin-right: 5px;
 }
 .ftable .fRow .fCell{
 	display: table-cell;
@@ -140,6 +148,7 @@ input{
   padding-left: 10px;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
+  line-height: 30px;
 }
 .btn:first-child{
     margin-right: 5px;
